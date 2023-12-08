@@ -1,4 +1,4 @@
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 from openai import OpenAI
 import streamlit as st
@@ -14,9 +14,6 @@ API_KEY = st.secrets["OPENAI_API_KEY"]
 # )
 
 client = OpenAI(api_key=API_KEY)
-
-#랭체인 강의 듣기-조코딩
-#세션 스테이트(스트림릿)
 
 #thread.id를 관리하기 위함
 if 'thread_id' not in st.session_state:
