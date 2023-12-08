@@ -5,7 +5,8 @@ import streamlit as st
 import time
 
 load_dotenv()
-API_KEY = os.environ['OPENAI_API_KEY']
+# API_KEY = os.environ['OPENAI_API_KEY']
+API_KEY = st.secrets['OPENAI_API_KEY']
 
 client = OpenAI(api_key=API_KEY)
 
