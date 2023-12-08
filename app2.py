@@ -4,7 +4,7 @@ from openai import OpenAI
 import streamlit as st
 import time
 
-load_dotenv()
+# load_dotenv()
 # API_KEY = os.environ['OPENAI_API_KEY']
 API_KEY = st.secrets["OPENAI_API_KEY"]
 # st.write("API_KEY:", st.secrets["OPENAI_API_KEY"])
