@@ -27,7 +27,7 @@ assistant_id = "asst_Tm4oToZMp4sgUxuDilVQHyVl"
 thread_messages = client.beta.threads.messages.list(thread_id,order="asc")
 # print(thread_messages.data)
 
-st.header("현진건 작가님과의 대화, 그리고 CSBP팀의 별명을 물어보세요")
+st.header("현진건 작가님과의 대화")
 
 for msg in thread_messages.data:
     with st.chat_message(msg.role):
