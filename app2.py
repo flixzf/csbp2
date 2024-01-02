@@ -20,8 +20,9 @@ if 'thread_id' not in st.session_state:
     thread = client.beta.threads.create()
     st.session_state.thread_id = thread.id
 
+# thread_id = st.session_state.thread_id, # thread_QA07x9f3oAFxLA2MWYyF7JHs
 # thread_id = st.session_state.thread_id
-thread_id = st.session_state.thread_id
+thread_id = "thread_QA07x9f3oAFxLA2MWYyF7JHs"
 assistant_id = "asst_Tm4oToZMp4sgUxuDilVQHyVl"
 
 thread_messages = client.beta.threads.messages.list(thread_id,order="asc")
